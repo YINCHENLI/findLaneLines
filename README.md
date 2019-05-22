@@ -43,17 +43,21 @@ def find_lanes_pipeline(image):
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by finding the slope and intercept, and draw a straight line between the two points to the bottom and the 60% upper part of the picture.
 
+If you'd like to include images to show how the pipeline works, here is how to include an image: 
+
+![alt text][image1]
+
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when there is some noisy data. In the video, I can tell some time, the part that pick up the line upper point and lower point could be different.
 
-Another shortcoming could be ...
+Another shortcoming could be the line being straight is not optimal. A culve line may be more intuitive and accurate.
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to apply function to spot outliners to reduce the noise.
 
-Another potential improvement could be to ...
+Another potential improvement could be to include culve lines instead of straight lines.
